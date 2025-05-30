@@ -403,3 +403,46 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+#image-banner {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 40px; /* Space from the section above */
+}
+
+#image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black bg */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #4E4FEB;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3c3cfa;
+}
+section {
+  margin-bottom: 60px;
+}
