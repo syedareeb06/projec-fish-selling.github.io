@@ -1,248 +1,183 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - p1</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SAA HOME BREED PETS AND FISHES</title>
-  <head>
-    <title>SAA HOME BREED PETS AND FISHES</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMFZ6j5H6pGg8LC5C5PBBLhGG0lxP4VG9g3N9" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
-</head>
-  <style>
-    #outline {
-  stroke-dasharray: 2.42777px, 242.77666px;
-  stroke-dashoffset: 0;
-  -webkit-animation: anim 1.6s linear infinite;
-  animation: anim 1.6s linear infinite;
-}
 
-@-webkit-keyframes anim {
-  12.5% {
-    stroke-dasharray: 33.98873px, 242.77666px;
-    stroke-dashoffset: -26.70543px;
-  }
-
-  43.75% {
-    stroke-dasharray: 84.97183px, 242.77666px;
-    stroke-dashoffset: -84.97183px;
-  }
-
-  100% {
-    stroke-dasharray: 2.42777px, 242.77666px;
-    stroke-dashoffset: -240.34889px;
-  }
-}
-
-@keyframes anim {
-  12.5% {
-    stroke-dasharray: 33.98873px, 242.77666px;
-    stroke-dashoffset: -26.70543px;
-  }
-
-  43.75% {
-    stroke-dasharray: 84.97183px, 242.77666px;
-    stroke-dashoffset: -84.97183px;
-  }
-
-  100% {
-    stroke-dasharray: 2.42777px, 242.77666px;
-    stroke-dashoffset: -240.34889px;
-  }
-}
-  </style>
-
+  <!-- External Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Inline Loader Animation -->
+  <style>
+    #outline {
+      stroke-dasharray: 2.42777px, 242.77666px;
+      stroke-dashoffset: 0;
+      animation: anim 1.6s linear infinite;
+    }
+    @keyframes anim {
+      12.5% { stroke-dasharray: 33.98873px, 242.77666px; stroke-dashoffset: -26.70543px; }
+      43.75% { stroke-dasharray: 84.97183px, 242.77666px; stroke-dashoffset: -84.97183px; }
+      100% { stroke-dasharray: 2.42777px, 242.77666px; stroke-dashoffset: -240.34889px; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Loader -->
-  <div class="loader">
-    <div class="spinner"></div>
+
+<!-- Loading Screen -->
+<div id="loading-screen" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+  <div>
+    <svg style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 187.3 93.7" height="300px" width="400px">
+      <path id="outline" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" stroke="#4E4FEB" stroke-width="4" fill="none"/>
+      <path id="outline-bg" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" stroke="#4E4FEB" stroke-width="4" fill="none" opacity="0.05"/>
+    </svg>
+    <p class="text-center mt-4" id="loading-text">Loading...</p>
   </div>
-
-  <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="https://i.ibb.co/v4CNbGC/logo.png" alt="SAA Home Breed Pets and Fishes">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Catalog</a></li>
-        <li><a href="#">Bag</a></li>
-        <li><a href="#">Account</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to SAA Home Breed Pets and Fishes</h1>
-      <p>Find the best aquarium fishes, medicine, filters, and more!</p>
-      <a href="#" class="btn">Shop Now</a>
-    </div>
-    <div class="hero-image">
-      <img src="https://i.ibb.co/n1QScMd/Getty-Images-154933437-56a330a15f9b58b7d0d0e1f3.webp" alt="Aquarium Fishes">
-    </div>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAA Home Breed Pets and Fishes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-        setTimeout(() => {
-            document.getElementById('loading-screen').style.display = 'none';
-            document.getElementById('main-content').classList.remove('hidden');
-            type(); // Start the typewriter effect
-        }, 2000);
-    </script>
-    <!-- Header and Hero Section (Previous Sections) -->
-    
-    <!-- Video Section -->
-    <section id="video-section">
-        <h2>Watch Our Fish Collection</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/vcFybcBrE8o" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- Image Banner Section -->
-    <section id="image-banner">
-        <img src="down image.png" alt="Fish Collection Banner">
-        <div class="banner-text">
-            <h2>Discover Our Exclusive Fish Range</h2>
-            <a href="#explore" class="cta-button">Explore More</a>
-        </div>
-    </section>
-  <!-- Services Section -->
-<section id="services" class="services-section">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <img src="https://img.icons8.com/material-outlined/24/000000/fast-delivery.png" alt="Delivery Service Icon" />
-                <h3>Fast Delivery</h3>
-                <p>We ensure quick delivery of all your aquarium needs to your doorstep.</p>
-            </div>
-            <div class="service">
-                <img src="https://img.icons8.com/material-outlined/24/000000/pet-food.png" alt="Quality Food Icon" />
-                <h3>Quality Food</h3>
-                <p>Providing high-quality fish food for the best nutrition of your pets.</p>
-            </div>
-            <div class="service">
-                <img src="https://img.icons8.com/material-outlined/24/000000/aquarium.png" alt="Aquarium Setup Icon" />
-                <h3>Aquarium Setup</h3>
-                <p>Expert guidance for setting up a beautiful aquarium at home.</p>
-            </div>
-            <div class="service">
-                <img src="https://img.icons8.com/material-outlined/24/000000/grooming.png" alt="Grooming Service Icon" />
-                <h3>Grooming Services</h3>
-                <p>Professional grooming for your aquatic friends to keep them healthy.</p>
-            </div>
-        </div>
-    </div>
-  <div id="loading-screen" class="fixed inset-0 flex items-center justify-center bg-white z-50">
-    <div>
-        <svg style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 187.3 93.7" height="300px" width="400px">
-            <path d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1
-            c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" fill="none" id="outline" stroke="#4E4FEB"></path>
-            <path d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1
-            c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#4E4FEB" fill="none" opacity="0.05" id="outline-bg"></path>
-        </svg>
-        <p class="text-center mt-4" id="loading-text">Loading...</p>
-    </div>
 </div>
+
+<!-- Navigation -->
+<header>
+  <nav>
+    <div class="logo">
+      <img src="https://i.ibb.co/v4CNbGC/logo.png" alt="SAA Home Breed Pets and Fishes">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Catalog</a></li>
+      <li><a href="#">Bag</a></li>
+      <li><a href="#">Account</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to SAA Home Breed Pets and Fishes</h1>
+    <p>Find the best aquarium fishes, medicine, filters, and more!</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.ibb.co/n1QScMd/Getty-Images-154933437-56a330a15f9b58b7d0d0e1f3.webp" alt="Aquarium Fishes">
+  </div>
 </section>
 
-<!-- Testimonial Section -->
+<!-- Video Section -->
+<section id="video-section">
+  <h2>Watch Our Fish Collection</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/vcFybcBrE8o" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Image Banner -->
+<section id="image-banner">
+  <img src="down image.png" alt="Fish Collection Banner">
+  <div class="banner-text">
+    <h2>Discover Our Exclusive Fish Range</h2>
+    <a href="#explore" class="cta-button">Explore More</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://img.icons8.com/material-outlined/24/000000/fast-delivery.png" />
+        <h3>Fast Delivery</h3>
+        <p>Quick delivery of all aquarium needs to your doorstep.</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/material-outlined/24/000000/pet-food.png" />
+        <h3>Quality Food</h3>
+        <p>High-quality fish food for the best nutrition.</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/material-outlined/24/000000/aquarium.png" />
+        <h3>Aquarium Setup</h3>
+        <p>Expert setup guidance for a beautiful home aquarium.</p>
+      </div>
+      <div class="service">
+        <img src="https://img.icons8.com/material-outlined/24/000000/grooming.png" />
+        <h3>Grooming Services</h3>
+        <p>Professional grooming to keep your aquatic friends healthy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
 <section id="testimonial" class="testimonial-section">
-    <div class="container">
-        <h2>Customer Testimonials</h2>
-        <div class="testimonial">
-            <div class="testimonial-image">
-                <img src="https://imgs.search.brave.com/TJ57yw5KWnQ4ux2s2dKSOLBuU3hY4Ijwf9R8WJ7bm1U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vOTcwYmQ0/NDItMWRkMC00ZTE1/LWJlM2UtYjBlZGYy/YTdkZjIyL2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0x/JnY9NjM4NDA1NjA2/Njk5OTMwMDAw.jpeg" alt="Customer Image" />
-            </div>
-            <div class="testimonial-text">
-                <h3>"Amazing Service!"</h3>
-                <p>“SAA Home Breed Pets provided me with the best aquarium setup. Their team was incredibly knowledgeable and supportive throughout the process. Highly recommend!”</p>
-                <p>- SAA</p>
-            </div>
-        </div>
+  <div class="container">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial">
+      <div class="testimonial-image">
+        <img src="https://imgs.search.brave.com/TJ57yw5KWnQ4ux2s2dKSOLBuU3hY4Ijwf9R8WJ7bm1U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vOTcwYmQ0/NDItMWRkMC00ZTE1/LWJlM2UtYjBlZGYy/YTdkZjIyL2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0x/JnY9NjM4NDA1NjA2/Njk5OTMwMDAw.jpeg" alt="Customer">
+      </div>
+      <div class="testimonial-text">
+        <h3>"Amazing Service!"</h3>
+        <p>“SAA Home Breed Pets gave me the best aquarium setup. Highly recommend!”</p>
+        <p>- SAA</p>
+      </div>
     </div>
+  </div>
 </section>
-<!-- Contact Section -->
+
+<!-- Contact -->
 <section class="contact-section">
-    <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form class="vertical-form" action="https://submit-form.com/St98Poetu">
-            <label for="first-name">First name</label>
-            <input id="first-name" name="first-name" type="text" required />
-            <label for="last-name">Last name</label>
-            <input id="last-name" name="last-name" type="text" required />
-            <label for="message">Message</label>
-            <textarea id="message" name="message" cols="15" rows="5" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-    <div class="contact-image">
-        <img src="https://imgs.search.brave.com/mj4jEwcFYj8rIP3q2uTnDKgaUj8j1JiJlY_qzxvyzDg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly9KR2FNWGs2dWRZ/QWRQQWNtX1lQYWdW/OGhINkU9LzB4MDo5/NjB4OTYwL2ZpdC1p/bi81OTB4NTkwLzk5/ZGVzaWducy1jb250/ZXN0cy1hdHRhY2ht/ZW50cy85Mi85Mjgz/MS9hdHRhY2htZW50/XzkyODMxOTU2.jpeg" alt="Contact Us Image">
-    </div>
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form class="vertical-form" action="https://submit-form.com/St98Poetu">
+      <label for="first-name">First Name</label>
+      <input id="first-name" name="first-name" type="text" required />
+      <label for="last-name">Last Name</label>
+      <input id="last-name" name="last-name" type="text" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="contact-image">
+    <img src="https://imgs.search.brave.com/mj4jEwcFYj8rIP3q2uTnDKgaUj8j1JiJlY_qzxvyzDg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly9KR2FNWGs2dWRZ/QWRQQWNtX1lQYWdW/OGhINkU9LzB4MDo5/NjB4OTYwL2ZpdC1p/bi81OTB4NTkwLzk5/ZGVzaWducy1jb250/ZXN0cy1hdHRhY2ht/ZW50cy85Mi85Mjgz/MS9hdHRhY2htZW50/XzkyODMxOTU2.jpeg" alt="Contact">
+  </div>
 </section>
+
 <!-- Footer -->
 <footer>
-    <div class="footer-content">
-        <div class="footer-icons">
-            <div><i class="fas fa-truck"></i> Free Delivery (above ₹5000)</div>
-            <div><i class="fas fa-shield-alt"></i> Buyer Protection</div>
-            <div><i class="fas fa-headset"></i> Customer Support</div>
-        </div>
-        <div class="footer-info">
-            <h2>SAA HOME BREED PETS</h2>
-            <p>FAST AND SAFE DELIVERY/ LIVE FISH/AQUA PLANTS/ AQUA ACCESSORIES/ALL OVER TN</p>
-            <p>Naveen's Snacks, 3792, West Anuppanadi, Madurai 9</p>
-            <p>GSTIN: UDYAM-TN-12-002</p>
-        </div>
-        <div class="footer-links">
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Privacy Policies</a>
-            <a href="#">Refund Policies</a>
-            <a href="#">Sitemap</a>
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-        </div>
+  <div class="footer-content">
+    <div class="footer-icons">
+      <div><i class="fas fa-truck"></i> Free Delivery (above ₹5000)</div>
+      <div><i class="fas fa-shield-alt"></i> Buyer Protection</div>
+      <div><i class="fas fa-headset"></i> Customer Support</div>
     </div>
+    <div class="footer-info">
+      <h2>SAA HOME BREED PETS</h2>
+      <p>FAST AND SAFE DELIVERY/ LIVE FISH / AQUA PLANTS / ACCESSORIES / TN-WIDE</p>
+      <p>Naveen's Snacks, 3792, West Anuppanadi, Madurai 9</p>
+      <p>GSTIN: UDYAM-TN-12-002</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policies</a>
+      <a href="#">Refund Policies</a>
+      <a href="#">Sitemap</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+    </div>
+  </div>
 </footer>
 
-
-    <!-- Footer Section (Previous Sections) -->
-
-</body>
-</html>
-<!-- partial -->
-  <script  src="./script.js"></script>
+<!-- JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      document.getElementById('loading-screen').style.display = 'none';
+    }, 2000);
+  });
+</script>
 
 </body>
 </html>
